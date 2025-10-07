@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- using Jquery CDN -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>         -->
+    <title>Document</title>
+</head>
+<body>
+    <section>click me</section>
+    <p class="welcome">Welcome to Jquery class</p>
+
+    <!-- hide -->
+    <div id="hideThis" style="background-color: black; color: aliceblue; height: 100px; width: 200px;">
+        <p>This is a paragraph that will be hidden (click me to hide)</p>
+    </div>
+    
+    <!-- show -->
+    <button type="button">SHOW ELEMENT (show hidden element)</button>
+
+    <!-- toggle -->
+    <button class="togl">Toggle the DIV</button>
+    
+    <!-- fade -->
+    <div id="div1" style="width: 80px; height: 80px; background-color: red;"></div>
+    <button id="fadeBtntoclick">Fade Box</button>
+    
+    <!-- slide -->
+    <div id="slideDiv" style="width: 80px; height: 80px; background-color: brown;"></div>
+    <button id="slideBtn">Slide Box</button>
+
+    <!-- animate -->
+    <div id="animateDiv" style="background-color: green; height: 100px; width: 100px; position: absolute;"></div>
+    <button id="animateBtn">Animate Box</button>
+    
+    <!-- stop -->
+    <button id="stop">stop</button>
+
+    <!-- chaining -->
+    <div class="chaining" style="background-color: blue; height: 100px; width: 100px; position: absolute; left: 200px;">this is a text</div>
+
+    <!-- get -->
+    <h2 id="PrinceTXT" style="margin-top: 8rem; font-style: italic; font-family: Arial, Helvetica, sans-serif;">My name is Prince</h2>
+    <div id="contentDisplay1"></div>
+    
+    <h2 class="Secondcontent" style="background-color: green;">second content</h2>
+    <div id="contentDisplay2"></div>
+
+    <h2 id="AvalueText" style="cursor: pointer;">My name is unknown - click me to alert the input value</h2>
+    <input type="text" class="MrNoName">
+
+
+    <!-- set -->
+    <h2 id="setElementText">What's your name</h>
+    <h3 class="sethtmlText">who are you</h3>
+    <input type="text" id="setInput" placeholder="Input some text">
+
+    <button class="btnSet">set input</button>
+
+    <div id="result"></div>
+    <div class="contentDiv" style="height: 200px; width: 250px; border: 3px dotted red; margin: 5rem;">
+        <span style="color: rebeccapurple;"> div content</span>
+    </div>
+
+    <!-- append() - Inserts content at the end of the selected elements
+    prepend() - Inserts content at the beginning of the selected elements
+    after() - Inserts content after the selected elements
+    before() - Inserts content before the selected elements -->
+
+
+    <!-- using jquery locally -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        
+        $(document).ready(function () {
+            $("p.welcome").click(function () {
+                alert("paragraph is clicked");
+            });
+
+            $('#fadeBtntoclick').click(function () {
+                $('#div1').fadeToggle(5000)
+            })
+        });
+        
+    </script>
+</body>
+</html>

@@ -68,6 +68,48 @@
     after() - Inserts content after the selected elements
     before() - Inserts content before the selected elements -->
 
+    <!-- traversing -->
+    <div>
+        div
+        <section>
+            section
+            <ul>
+                ul
+                <li class="first">First item</li>
+            </ul>
+        </section>
+    </div>
+    <style>
+        .parent {
+            border: 3px solid grey;
+            width: 50%;
+            height: 250px;
+            margin: 5rem;
+            padding: 1rem;
+        }
+
+        section {
+            border: 3px solid grey;
+            width: 70%;
+            height: 70%;
+            padding: 1rem;
+        }
+
+        ul {
+            border: 3px solid grey;
+            width: 50%;
+            height: 50%;
+            padding: 1rem;
+        }
+
+        li {
+            border: 3px solid grey;
+            width: 100px;
+            height: 30px;
+            list-style: none;
+        }
+    </style>
+
 
     <!-- using jquery locally -->
     <script src="./js/jquery.js"></script>

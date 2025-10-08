@@ -91,4 +91,9 @@ $(document).ready(function(){
 
         $('#result').html("height:"+ $(this).height()+ " width:"+ $(this).width())
     })
+
+    // traversing
+    // $('.first').parent().css('border','2px solid red')
+    // $('.first').parents().css('border','2px solid blue')
+    $('.first').parentsUntil('section').css('border','2px solid green')
 });
